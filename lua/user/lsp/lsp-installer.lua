@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 local servers = {
-  "sumneko_lua",
+  -- "sumneko_lua",
   "cssls",
   "html",
   "tsserver",
@@ -15,6 +15,8 @@ local servers = {
   "jedi_language_server",
   "gopls",
   "clangd",
+  "cmake",
+  "rust_analyzer",
 }
 
 lsp_installer.setup()
