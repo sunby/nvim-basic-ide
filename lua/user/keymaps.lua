@@ -54,6 +54,7 @@ keymap("v", ">", ">gv", opts)
 
 -- NvimTree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+keymap("n", "<leader>E", ":NvimTreeFocus<CR>", opts)
 
 -- Telescope
 keymap("n", "<leader>f", ":Telescope find_files<CR>", opts)
@@ -78,3 +79,5 @@ keymap("n", "<leader>dr", "<cmd>lua require'dap'.repl.toggle()<cr>", opts)
 keymap("n", "<leader>dl", "<cmd>lua require'dap'.run_last()<cr>", opts)
 keymap("n", "<leader>du", "<cmd>lua require'dapui'.toggle()<cr>", opts)
 keymap("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", opts)
+
+keymap("n", "<leader>o", ":SymbolsOutline<CR>", opts)
