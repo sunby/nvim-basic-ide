@@ -80,7 +80,7 @@ M.on_attach = function(client, bufnr)
   --   client.resolved_capabilities.document_formatting = false
   -- end
 
-  vim.cmd "autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync(nil, 5000)"
+  vim.cmd "autocmd BufWritePre <buffer> lua vim.lsp.buf.format()"
 
   lsp_keymaps(bufnr)
   local status_ok, illuminate = pcall(require, "illuminate")
